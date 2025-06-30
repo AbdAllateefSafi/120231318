@@ -1,0 +1,604 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+
+}
+
+@font-face {
+  font-family: 'TuesdayNight';
+  src: url('../fonts/TuesdayNight-Regular.woff') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --background-color-light: #ffffff;
+  --text-color-light: #1a1e12;
+  --background-color-dark: #0c0c0c;
+  --text-color-dark: #ffffff;
+  --background-color-secndLight: #f8f2de;
+  /*light */
+  --background-color-secndDark: #111111;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+
+}
+
+.drkicon,
+.lang {
+
+  width: 20%;
+  margin: auto;
+}
+
+.lang {
+  margin-top: 17%;
+  margin-bottom: 50%;
+}
+
+.fs13 {
+  font-size: 0.6rem;
+  margin-top: 6%;
+
+}
+
+.copy {
+  color: #c07f50;
+
+}
+
+.line2 {
+  width: 33%;
+  border: 1.5px solid #c07f50;
+  margin: auto;
+}
+
+.noborder,
+.bx-moon-star {
+  border: none;
+}
+
+.dark-mode {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+}
+
+.bxrIcon {
+  color: #c07f50;
+  font-size: -webkit-xxx-large;
+}
+
+
+.asid {
+  width: 20%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 11px 20px 0px #81717175;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.main_conteiner {
+  height: 100vh;
+  margin-left: 20%;
+  transition: all 1s ease;
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.logoDiv {
+
+  width: 50%;
+}
+
+.signDiv {
+  margin-top: 30%;
+  margin-bottom: 40%;
+}
+
+.logo {
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 50%;
+
+}
+
+.namesign {
+  font-family: 'TuesdayNight', sans-serif;
+  position: absolute;
+  top: 21%;
+  left: 30%;
+  color: #c07f50;
+  font-size: 1.5rem;
+  font-weight: 559;
+}
+
+.ulLink {
+  list-style: none;
+  text-align: center;
+}
+
+.link {
+  margin: 15%;
+}
+
+.link a {
+  text-decoration: none;
+  padding: 2%;
+  color: #000000;
+}
+
+a.homeLink:hover {
+  color: #c07f50;
+}
+
+#home {
+  background-image: url('../images/hero.jpg');
+  background-size: cover;
+  height: 100%;
+}
+
+.info {
+  background-color: #ffffffdf;
+  width: 30%;
+  height: 182px;
+  padding: 1.5%;
+  position: absolute;
+  bottom: 20px;
+  right: 130px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.job,
+.phone,
+.loc,
+.email {
+  font-size: 13px;
+  font-weight: 450;
+
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.line {
+  width: 10%;
+  border: 1.5px solid #c07f50;
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+
+#about {
+  display: flex;
+  margin: 80px 130px;
+}
+
+.right {
+  width: 40%;
+}
+
+.left {
+  width: 60%;
+}
+
+.round {
+  width: 100%;
+  height: 450px;
+}
+
+.roundShadow {
+  width: 100%;
+  height: 450px;
+  border: 10px solid #f8f2ed;
+  padding: 9px 0 0 4%;
+}
+
+.aboutme {
+  display: flex;
+}
+
+.aboutLine {
+  color: #c07f50;
+}
+
+.nameAbout {
+  padding: 2% 0 4% 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.desc {
+  width: 80%;
+  font-size: 13px;
+  font-weight: 450;
+  line-height: 1rem;
+  padding-bottom: 3%;
+}
+
+.titleA {
+  color: #c07f50;
+  font-size: 13px;
+  font-weight: 450;
+}
+
+.val {
+  font-size: 13px;
+  font-weight: 450;
+}
+
+.basicInfo {
+  display: flex;
+  line-height: 1.8rem;
+}
+
+.first {
+  width: 40%;
+}
+
+.second {
+  width: 40%;
+}
+
+.download {
+  color: white;
+  background-color: #c07f50;
+  padding: 1%;
+  margin-top: 4%;
+  border: none;
+  width: 20%;
+}
+
+#services {
+  background-color: #f8f2ed;
+  padding: 1px;
+}
+
+.services {
+  margin: 80px 130px;
+}
+
+.titleServices {
+  padding: 1.2% 0 2% 0;
+
+}
+
+.number {
+  text-align: right;
+}
+
+.descWork {
+  font-size: 13px;
+  font-weight: 450;
+  line-height: 1rem;
+  margin-top: 3%;
+
+}
+
+.divServices {
+  display: flex;
+}
+
+.item {
+  background-color: #ffffff;
+  width: 32%;
+  padding: 2%;
+  line-height: 28px;
+  margin: 1% 1% 1% 0;
+  box-shadow: 7px 9px 10px 3px #d3d3d375;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  display: none;
+  width: 100%;
+  transition: all 1s ease;
+  height: -webkit-fill-available;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #c07f5080;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.item:hover .overlay,
+.itemWork:hover .overlay {
+  display: block;
+  opacity: 1;
+}
+
+#work {
+  padding: 1px;
+}
+
+.work {
+  margin: 80px 130px;
+}
+
+.divWork {
+  display: flex;
+}
+
+.titleWork {
+  padding: 1.2% 0 2% 0;
+
+}
+
+.itemWork {
+  width: 32%;
+  height: max-content;
+  margin: 0 2% 1% 0%;
+  position: relative;
+}
+
+.itemWork img {
+  width: 100%;
+}
+
+#blog {
+  background-color: #f8f2ed;
+  padding: 1px;
+}
+
+.blog {
+  margin: 80px 130px;
+}
+
+.titleBlog {
+  padding: 1.2% 0 2% 0;
+
+}
+
+.divBlog {
+  display: flex;
+}
+
+.itemBlog {
+  background-color: #ffffff;
+  width: 50%;
+  line-height: 28px;
+  margin: 1% 1% 1% 0;
+  height: max-content;
+  box-shadow: 7px 9px 10px 3px #d3d3d375;
+}
+
+.itemBlog img {
+  width: 100%;
+}
+
+.descBlog {
+  padding: 1.5%;
+}
+
+.descBlog p {
+  font-size: 0.9rem;
+}
+
+.category {
+  color: #c07f50;
+}
+
+#contact {
+  padding: 1px;
+  margin: 80px 130px;
+}
+
+.flx {
+  display: flex;
+}
+
+.leftContact {
+  width: 50%;
+}
+
+.rightContact {
+  width: 50%;
+}
+
+.titleContact {
+  padding: 1.2% 0 2% 0;
+}
+
+.lnht {
+  line-height: 28px;
+}
+
+input {
+  width: 45%;
+}
+
+textarea {
+  width: 90%;
+}
+
+input,
+textarea {
+  border-bottom: 2px solid #c07f50;
+  border-right: 1px solid #fff;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  padding: 2% 0;
+}
+
+.send {
+  color: white;
+  background-color: #c07f50;
+  padding: 2%;
+  margin-top: 4%;
+  border: none;
+  width: 25%;
+}
+
+footer {
+  background-color: #c07f50;
+}
+
+.footer {
+  margin: 80px 130px;
+  display: flex;
+  font-size: 0.7rem;
+  color: #fff;
+  padding: 1% 0;
+}
+
+#scrollTop {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: #c07f50;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 6px;
+  font-size: 20px;
+}
+
+#scrollTop:hover {
+  background-color: #555;
+  /* Add a dark-grey background on hover */
+}
+
+.lr {
+  text-align: right;
+}
+
+.menuIcon {
+  display: none;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  font-size: 20px;
+  background: #000;
+  border: none;
+  color: #fff;
+  z-index: 1100;
+  cursor: pointer;
+  padding: 5px;
+  padding-bottom: 0;
+}
+
+.close {
+  display: none;
+  background: #000;
+  border: none;
+  font-size: 24px;
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  padding: 2px;
+  padding-bottom: 0;
+}
+
+.asid {
+  transform: translateX(0);
+}
+
+.w100 {
+  width: 50%;
+}
+
+/* responsive */
+@media (max-width: 992px) {
+  .asid {
+    transform: translateX(-100px);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .asid.active {
+    transform: translateX(0);
+  }
+
+  .menuIcon {
+    display: block;
+  }
+
+  .close {
+    display: block;
+  }
+
+  .namesign {
+    left: 40%;
+    bottom: 13%;
+  }
+
+  .main_conteiner {
+    margin-left: 0;
+  }
+
+  .info {
+    position: static;
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  #about,
+  .divServices,
+  .divWork,
+  .divBlog,
+  .flx,
+  .footer {
+    flex-direction: column;
+  }
+
+  .left,
+  .right,
+  .leftContact,
+  .rightContact,
+  .item,
+  .itemWork,
+  .itemBlog {
+    width: 100%;
+  }
+
+  .download,
+  .send {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .services,
+  .blog,
+  .work,
+  #about,
+  #contact {
+    margin: 20%;
+  }
+
+}
