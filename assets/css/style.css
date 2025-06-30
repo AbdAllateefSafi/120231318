@@ -284,6 +284,10 @@ a.homeLink:hover {
 
 .number {
   text-align: right;
+    font-size: 1.2rem;
+    color: #fff;
+    -webkit-text-stroke: 1px #fff;
+    text-shadow: -1px -1px 0 #000, 1px 1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .descWork {
